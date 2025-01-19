@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import './Home.css';
 const Home = () => {
   // Tab names array
   const tabNames = ['All', 'Music', 'Comedy', 'Drawing'];
@@ -45,17 +45,22 @@ const Home = () => {
   return (
     <div>
       {/* Navbar */}
-      <div className="navbar bg-base-100">
-        <div className="navbar-start">
-          <img src="./assets/Logo.png" alt="Logo" className="h-9" />
+      <div className="navbar bg-base-100 space-y-5">
+        <div className=" logo navbar-start">
+          <img src="./assets/Logo.png" alt="Logo" className=" h-10 ml-10" />
         </div>
         <div className="navbar-center">
           <button className="btn bg-gray-300">Sort by View</button>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-error text-white">Blog</button>
+          <button className="btn btn-error text-white mr-10 w-20 h-11">Blog</button>
         </div>
       </div>
+
+      <div>
+        <hr class="border-t-2 border-[#171717] m-10" />
+      </div>
+
 
       {/* Main Content */}
       <div className="container mx-auto px-16 mt-16">
